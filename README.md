@@ -4,7 +4,7 @@
 [![Build Status](https://dev.azure.com/spmeesseman/extjs-pkg-websocket/_apis/build/status/spmeesseman.extjs-pkg-websocket?branchName=master)](https://dev.azure.com/spmeesseman/extjs-pkg-websocket/_build/latest?definitionId=2&branchName=master)
 [![Known Vulnerabilities](https://snyk.io/test/github/spmeesseman/extjs-pkg-websocket/badge.svg)](https://snyk.io/test/github/spmeesseman/extjs-pkg-websocket)
 [![Average time to resolve an issue](https://isitmaintained.com/badge/resolution/spmeesseman/extjs-pkg-websocket.svg)](https://isitmaintained.com/project/spmeesseman/extjs-pkg-websocket "Average time to resolve an issue")
-[![Percentage of issues still open](https://isitmaintained.com/badge/open/spmeesseman/extjs-pkg-websocket.svg)](https://isitmaintained.com/project/spmeesseman/extjs-pkg-websocket "Percentage of issues still open")
+[![Percentage of issues still open](https://isitmaintained.com/badge/open/spmeesseman/extjs-pkg-websocket.svg)](https://isitmaintained.com/project/spmeesseman/extjs-pkg-websocket "Percentage of issues still open") [![Greenkeeper badge](https://badges.greenkeeper.io/spmeesseman/extjs-pkg-websocket.svg)](https://greenkeeper.io/)
 
 ## Description
 
