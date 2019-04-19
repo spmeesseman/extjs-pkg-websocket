@@ -3,7 +3,7 @@
 	"displayName": "ExtJS Package Wrapper for WebSocket",
 	"description": "ExtJS Package Wrapper for WebSocket",
 	"publisher": "spmeesseman",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"license": "MIT",
 	"homepage": "https://github.com/spmeesseman/extjs-pkg-websicket/blob/master/README.md",
 	"repository": {
