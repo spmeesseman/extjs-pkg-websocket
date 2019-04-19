@@ -1,0 +1,79 @@
+{
+	"name": "extjs-pkg-websocket",
+	"displayName": "ExtJS Package Wrapper for WebSocket",
+	"description": "ExtJS Package Wrapper for WebSocket",
+	"publisher": "spmeesseman",
+	"version": "0.0.0",
+	"license": "MIT",
+	"homepage": "https://github.com/spmeesseman/extjs-pkg-websicket/blob/master/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/spmeesseman/extjs-pkg-websocket.git"
+	},
+	"bugs": {
+		"url": "https://github.com/spmeesseman/extjs-pkg-websocket/issues"
+	},
+	"devDependencies": {
+		"@semantic-release/changelog": "^3.0.2",
+		"@semantic-release/exec": "^3.3.0",
+		"@semantic-release/git": "^7.0.8",
+		"commitizen": "^3.0.7",
+		"conventional-changelog-spm": "^1.1.3",
+		"cz-conventional-changelog": "^2.1.0",
+		"semantic-release": "^15.13.3"
+	},
+	"scripts": {
+		"build": "npx sencha package build",
+		"repo-release": "npx sencha package add build\\websocket\\websocket.pkg",
+		"semantic-release": "semantic-release --no-ci",
+		"semantic-release-dry": "semantic-release --dry-run"
+	},
+	"config": {
+		"commitizen": {
+			"path": "cz-conventional-changelog"
+		}
+	},
+	"sencha": {
+		"name": "websocket",
+		"namespace": "Ext",
+		"framework": "ext",
+		"type": "code",
+		"creator": "spmeesseman",
+		"summary": "Package wrapper for WebSocket",
+		"detailedDescription": "Package wrapper for WebSocket",
+		"version": "1.0.0.0",
+		"compatVersion": "1.0.0",
+		"format": "1",
+		"slicer": null,
+		"output": "${framework.dir}/build/packages/${package.name}",
+		"local": true,
+		"resource": {
+			"paths": ""
+		},
+		"sass": {
+			"namespace": "Ext",
+			"etc": [
+				"${package.dir}/sass/var"
+			],
+			"var": [
+				"${package.dir}/sass/var"
+			],
+			"src": [
+				"${package.dir}/sass/src",
+				"${package.dir}/sass/src/main.scss"
+			]
+		},
+		"classpath": [
+			"${package.dir}/src"
+		],
+		"overrides": [
+			"${package.dir}/overrides"
+		],
+		"requires": [
+			"core"
+		],
+		"ignore": [
+			"(^|/)CVS(/?$|/.*?$)"
+		]
+	}
+}
