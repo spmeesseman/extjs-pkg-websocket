@@ -7,7 +7,8 @@ Ext.define('Ext.ux.WebSocket',
         observable: 'Ext.util.Observable'
     },
 
-    requires: ['Ext.util.TaskManager', 'Ext.util.Memento'],
+    //requires: ['Ext.util.TaskManager', 'Ext.util.Memento'],
+    requires: ['Ext.util.TaskManager'],
 
     config: 
     {
@@ -47,7 +48,7 @@ Ext.define('Ext.ux.WebSocket',
     CLOSING: 2,
     CLOSED: 3,
 
-    memento: {},
+    //memento: {},
     messageQueue: [],
 
 
@@ -75,8 +76,8 @@ Ext.define('Ext.ux.WebSocket',
             // Initializes internal websocket
             if (!me.getLazyConnection()) me.initWebsocket();
 
-            me.memento = Ext.create('Ext.util.Memento');
-            me.memento.capture('autoReconnect', me);
+            //me.memento = Ext.create('Ext.util.Memento');
+            //me.memento.capture('autoReconnect', me);
         }
         catch(err) {
             Ext.Error.raise(err);
@@ -120,7 +121,8 @@ Ext.define('Ext.ux.WebSocket',
         var me = this;
 
         // Restore autoReconnect initial value
-        me.memento.restore('autoReconnect', false, me);
+        //me.memento.restore('autoReconnect', false, me);
+        me.setAutoReconnect(true);
         me.initWebsocket();
 
         return me;
