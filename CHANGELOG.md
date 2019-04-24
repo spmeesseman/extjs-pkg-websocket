@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.2](https://github.com/spmeesseman/extjs-pkg-websocket/compare/v1.0.1...v1.0.2) (2019-04-24)
+
+
+### Bug Fixes
+
+* re-add unlisten() function in manager ([236186d](https://github.com/spmeesseman/extjs-pkg-websocket/commit/236186d))
+
 ## [1.0.1](https://github.com/spmeesseman/extjs-pkg-websocket/compare/v1.0.0...v1.0.1) (2019-04-23)
 
 
