@@ -79,6 +79,18 @@ Ext.define('Ext.ux.WebSocketManager',
     },
 
 
+    unlisten: function(events, handler) 
+    {
+        if (Ext.isString(events)) events = [events];
+
+        this.wsList.each(function(url, websocket, len) {
+            Ext.each(events, function(event) {
+                websocket.un(event, handler);
+            });
+        });
+    },
+
+
     listenExcept: function(events, websockets, handler) 
     {
         if (Ext.isString(events)) events = [events];
