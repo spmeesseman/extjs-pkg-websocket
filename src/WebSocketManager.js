@@ -67,13 +67,13 @@ Ext.define('Ext.ux.WebSocketManager',
     },
 
 
-    listen: function(events, handler) 
+    listen: function(events, handler, scope) 
     {
         if (Ext.isString(events)) events = [events];
 
         this.wsList.each(function(url, websocket, len) {
             Ext.each(events, function(event) {
-                websocket.on(event, handler);
+                websocket.on(event, handler, scope);
             });
         });
     },
