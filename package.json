@@ -1,5 +1,5 @@
 {
-	"name": "extjs-pkg-websocket",
+	"name": "@spmeesseman/extjs-pkg-websocket",
 	"displayName": "ExtJS Package Wrapper for WebSocket",
 	"description": "ExtJS Package Wrapper for WebSocket",
 	"publisher": "spmeesseman",
@@ -24,6 +24,9 @@
 		"commitizen": {
 			"path": "cz-conventional-changelog"
 		}
+	},
+	"publishConfig": {
+		"access": "public"
 	},
 	"files": [
 		"src"
