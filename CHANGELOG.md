@@ -1,5 +1,22 @@
 # Change Log
 
+## [1.0.4](https://github.com/spmeesseman/extjs-pkg-websocket/compare/v1.0.3...v1.0.4) (2019-05-01)
+
+
+### Bug Fixes
+
+* add config for max number of times to try and connect - maxConnectRetries ([65c04bf](https://github.com/spmeesseman/extjs-pkg-websocket/commit/65c04bf))
+
+
+### Build System
+
+* **npm:** scoped package name ([d8c7ba1](https://github.com/spmeesseman/extjs-pkg-websocket/commit/d8c7ba1))
+
+
+### Documentation
+
+* **readme:** update builds list [skip ci] ([bcffaeb](https://github.com/spmeesseman/extjs-pkg-websocket/commit/bcffaeb))
+
 ## [1.0.3](https://github.com/spmeesseman/extjs-pkg-websocket/compare/v1.0.2...v1.0.3) (2019-04-24)
 
 
