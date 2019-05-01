@@ -40,7 +40,11 @@ Ext.define('Ext.ux.WebSocket',
         // keepUnsentMessages Keep unsent messages and try to send them back after the connection 
         // is open again
         //
-        keepUnsentMessages: false
+        keepUnsentMessages: false,
+        //
+        // maxConnectRetries maximum nuber of times to try to connect
+        //
+        maxConnectRetries: 10
     },
 
     CONNECTING: 0,
@@ -50,7 +54,7 @@ Ext.define('Ext.ux.WebSocket',
 
     //memento: {},
     messageQueue: [],
-
+    connectRetries: 0,
 
     constructor: function(cfg) {
         var me = this;
@@ -140,9 +144,12 @@ Ext.define('Ext.ux.WebSocket',
 
         me.ws = Ext.isEmpty(me.getProtocol()) ? new WebSocket(me.getUrl()) : new WebSocket(me.getUrl(), me.getProtocol());
 
-        me.ws.onopen = function (evt) {
-            // Kills the auto reconnect task
-            // It will be reactivated at the next onclose event
+        me.ws.onopen = function (evt) 
+        {
+            me.connectRetries = 0;
+            //
+            // Kills the auto reconnect task.  It will be reactivated at the next onclose event
+            //
             if (me.autoReconnectTask) {
                 Ext.TaskManager.stop(me.autoReconnectTask);
                 delete me.autoReconnectTask;
@@ -161,6 +168,7 @@ Ext.define('Ext.ux.WebSocket',
         };
 
         me.ws.onerror = function(error) {
+            me.connectRetries++;
             me.fireEvent('error', me, error);
         };
 
@@ -178,6 +186,14 @@ Ext.define('Ext.ux.WebSocket',
                     },
                     interval: me.getAutoReconnectInterval()
                 });
+            }
+            //
+            // Kills the auto reconnect task.  It will be reactivated at the next onclose event
+            //
+            else if (me.autoReconnectTask && me.connectRetries >= me.getMaxConnectRetries()) {
+                console.warn("Max websocket connection attempts exceeded, user must manually connect to ws services");
+                Ext.TaskManager.stop(me.autoReconnectTask);
+                delete me.autoReconnectTask;
             }
         };
 
@@ -313,4 +329,3 @@ Ext.define('Ext.ux.WebSocket',
         return me;
     }
 });
-
