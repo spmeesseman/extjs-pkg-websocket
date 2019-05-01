@@ -5,14 +5,6 @@
 	"publisher": "spmeesseman",
 	"version": "1.0.3",
 	"license": "MIT",
-	"homepage": "https://github.com/spmeesseman/extjs-pkg-websicket/blob/master/README.md",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/spmeesseman/extjs-pkg-websocket.git"
-	},
-	"bugs": {
-		"url": "https://github.com/spmeesseman/extjs-pkg-websocket/issues"
-	},
 	"devDependencies": {
 		"@semantic-release/changelog": "^3.0.2",
 		"@semantic-release/exec": "^3.3.0",
@@ -34,7 +26,6 @@
 		}
 	},
 	"files": [
-		"build.xml",
 		"src"
 	],
 	"sencha": {
