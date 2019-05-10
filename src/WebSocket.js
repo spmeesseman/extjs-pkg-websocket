@@ -84,7 +84,7 @@ Ext.define('Ext.ux.WebSocket',
             //me.memento.capture('autoReconnect', me);
         }
         catch(err) {
-            Ext.Error.raise(err);
+            console.error(err.message);
             return null;
         }
 
