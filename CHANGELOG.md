@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.5](https://github.com/spmeesseman/extjs-pkg-websocket/compare/v1.0.4...v1.0.5) (2019-05-10)
+
+
+### Bug Fixes
+
+* internal js websocket error causes app to crash on any error ([b76b159](https://github.com/spmeesseman/extjs-pkg-websocket/commit/b76b159))
+
 ## [1.0.4](https://github.com/spmeesseman/extjs-pkg-websocket/compare/v1.0.3...v1.0.4) (2019-05-01)
 
 

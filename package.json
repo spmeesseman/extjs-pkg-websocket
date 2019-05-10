@@ -3,7 +3,7 @@
 	"displayName": "ExtJS Package Wrapper for WebSocket",
 	"description": "ExtJS Package Wrapper for WebSocket",
 	"publisher": "spmeesseman",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"license": "MIT",
 	"devDependencies": {
 		"@semantic-release/changelog": "^3.0.2",
