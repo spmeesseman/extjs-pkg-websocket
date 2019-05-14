@@ -2,7 +2,7 @@
 	"name": "@spmeesseman/extjs-pkg-websocket",
 	"displayName": "ExtJS Package Wrapper for WebSocket",
 	"description": "ExtJS Package Wrapper for WebSocket",
-	"publisher": "spmeesseman",
+	"author": "spmeesseman",
 	"version": "1.0.5",
 	"license": "MIT",
 	"devDependencies": {
