@@ -1,29 +1,33 @@
 {
-	"name": "@spmeesseman/extjs-pkg-websocket",
+	"name": "@perryjohnson/extjs-pkg-websocket",
 	"version": "1.0.5",
 	"displayName": "ExtJS Package Wrapper for WebSocket",
 	"description": "ExtJS Package Wrapper for WebSocket",
-	"author": {
-		"name": "Scott Meesseman"
-	},
 	"license": "MIT",
+	"author": {
+		"name": "Scott Meesseman",
+		"email": "smeesseman@pjats.com"
+	},
+	"bugs": {
+		"email": "smeesseman@pjats.com",
+		"url": "https://issues.development.pjats.com/extjs-pkg-websocket/ticket/1"
+	},
+	"homepage": "https://issues.development.pjats.com/extjs-pkg-websocket",
+	"repository": {
+		"type": "svn",
+		"url": "https://svn.development.pjats.com/repos/pja/extjs-pkg-websocket/trunk"
+	},
 	"devDependencies": {
-		"@semantic-release/changelog": "^3.0.2",
 		"@semantic-release/exec": "^3.3.0",
 		"@semantic-release/git": "^7.0.8",
-		"commitizen": "^3.0.7",
 		"conventional-changelog-spm": "^1.2.3",
-		"cz-conventional-changelog": "^2.1.0",
 		"semantic-release": "^15.13.12"
 	},
 	"scripts": {
+		"app-publish": "app-publisher -p ps",
+        "app-publish-dry": "app-publisher -p ps --dry-run",
 		"semantic-release": "semantic-release --no-ci",
 		"semantic-release-dry": "semantic-release --dry-run"
-	},
-	"config": {
-		"commitizen": {
-			"path": "cz-conventional-changelog"
-		}
 	},
 	"publishConfig": {
 		"access": "public"
@@ -39,7 +43,7 @@
 		"creator": "spmeesseman",
 		"summary": "Package wrapper for WebSocket",
 		"detailedDescription": "Package wrapper for WebSocket",
-		"version": "1.0.0.0",
+		"version": "1.0.5.0",
 		"compatVersion": "1.0.0",
 		"format": "1",
 		"slicer": null,
