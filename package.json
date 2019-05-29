@@ -1,81 +1,81 @@
 {
-	"name": "@perryjohnson/extjs-pkg-websocket",
-	"version": "1.0.5",
-	"displayName": "ExtJS Package Wrapper for WebSocket",
-	"description": "ExtJS Package Wrapper for WebSocket",
-	"license": "MIT",
-	"author": {
-		"name": "Scott Meesseman",
-		"email": "smeesseman@pjats.com"
-	},
-	"bugs": {
-		"email": "smeesseman@pjats.com",
-		"url": "https://issues.development.pjats.com/extjs-pkg-websocket/ticket/1"
-	},
-	"homepage": "https://issues.development.pjats.com/extjs-pkg-websocket",
-	"repository": {
-		"type": "svn",
-		"url": "https://svn.development.pjats.com/repos/pja/extjs-pkg-websocket/trunk"
-	},
-	"devDependencies": {
-		"@semantic-release/exec": "^3.3.0",
-		"@semantic-release/git": "^7.0.8",
-		"conventional-changelog-spm": "^1.2.3",
-		"semantic-release": "^15.13.12"
-	},
-	"scripts": {
-		"app-publish": "app-publisher -p ps",
+    "name": "@perryjohnson/extjs-pkg-websocket",
+    "version": "1.0.6",
+    "displayName": "ExtJS Package Wrapper for WebSocket",
+    "description": "ExtJS Package Wrapper for WebSocket",
+    "license": "MIT",
+    "author": {
+        "name": "Scott Meesseman",
+        "email": "smeesseman@pjats.com"
+    },
+    "bugs": {
+        "email": "smeesseman@pjats.com",
+        "url": "https://issues.development.pjats.com/extjs-pkg-websocket/ticket/1"
+    },
+    "homepage": "https://issues.development.pjats.com/extjs-pkg-websocket",
+    "repository": {
+        "type": "svn",
+        "url": "https://svn.development.pjats.com/repos/pja/extjs-pkg-websocket/trunk"
+    },
+    "devDependencies": {
+        "@semantic-release/exec": "^3.3.0",
+        "@semantic-release/git": "^7.0.8",
+        "conventional-changelog-spm": "^1.2.3",
+        "semantic-release": "^15.13.12"
+    },
+    "scripts": {
+        "app-publish": "app-publisher -p ps",
         "app-publish-dry": "app-publisher -p ps --dry-run",
-		"semantic-release": "semantic-release --no-ci",
-		"semantic-release-dry": "semantic-release --dry-run"
-	},
-	"publishConfig": {
-		"access": "public"
-	},
-	"files": [
-		"src"
-	],
-	"sencha": {
-		"name": "websocket",
-		"namespace": "Ext",
-		"framework": "ext",
-		"type": "code",
-		"creator": "spmeesseman",
-		"summary": "Package wrapper for WebSocket",
-		"detailedDescription": "Package wrapper for WebSocket",
-		"version": "1.0.5.0",
-		"compatVersion": "1.0.0",
-		"format": "1",
-		"slicer": null,
-		"output": "${framework.dir}/build/packages/${package.name}",
-		"local": true,
-		"resource": {
-			"paths": ""
-		},
-		"sass": {
-			"namespace": "Ext",
-			"etc": [
-				"${package.dir}/sass/var"
-			],
-			"var": [
-				"${package.dir}/sass/var"
-			],
-			"src": [
-				"${package.dir}/sass/src",
-				"${package.dir}/sass/src/main.scss"
-			]
-		},
-		"classpath": [
-			"${package.dir}/src"
-		],
-		"overrides": [
-			"${package.dir}/overrides"
-		],
-		"requires": [
-			"core"
-		],
-		"ignore": [
-			"(^|/)CVS(/?$|/.*?$)"
-		]
-	}
+        "semantic-release": "semantic-release --no-ci",
+        "semantic-release-dry": "semantic-release --dry-run"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "files": [
+        "src"
+    ],
+    "sencha": {
+        "name": "websocket",
+        "namespace": "Ext",
+        "framework": "ext",
+        "type": "code",
+        "creator": "spmeesseman",
+        "summary": "Package wrapper for WebSocket",
+        "detailedDescription": "Package wrapper for WebSocket",
+        "version": "1.0.6.0",
+        "compatVersion": "1.0.0",
+        "format": "1",
+        "slicer": null,
+        "output": "${framework.dir}/build/packages/${package.name}",
+        "local": true,
+        "resource": {
+            "paths": ""
+        },
+        "sass": {
+            "namespace": "Ext",
+            "etc": [
+                "${package.dir}/sass/var"
+            ],
+            "var": [
+                "${package.dir}/sass/var"
+            ],
+            "src": [
+                "${package.dir}/sass/src",
+                "${package.dir}/sass/src/main.scss"
+            ]
+        },
+        "classpath": [
+            "${package.dir}/src"
+        ],
+        "overrides": [
+            "${package.dir}/overrides"
+        ],
+        "requires": [
+            "core"
+        ],
+        "ignore": [
+            "(^|/)CVS(/?$|/.*?$)"
+        ]
+    }
 }
