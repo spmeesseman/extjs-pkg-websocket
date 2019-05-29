@@ -1,3 +1,41 @@
+# EXTJS-PKG-WEBSOCKET CHANGE LOG
+
+## Version 1.0.6 (May 29th, 2019)
+
+### Build System
+
+- **npm:** fix invalid attribute publisher->author [skip ci]
+- **npm:** package.json cleanup [skip ci]
+- **npm:** update npmrc
+
+### Chores
+
+- bump conventional-changelog-spm to re-release version
+- post 1.0.4 release files
+- post 1.0.5 release check in
+- prepare for first app-publisher release
+
+### Features
+
+- initial check in tested npm package project
+
+### Bug Fixes
+
+- add config for max number of times to try and connect - maxConnectRetries
+- internal js websocket error causes app to crash on exception
+
+### Code Styling
+
+- ignore unused files
+
+### Tests
+
+- scoped package name
+
+### Other Notes
+
+- scoped package name
+
 # Change Log
 
 ## [1.0.5](https://github.com/spmeesseman/extjs-pkg-websocket/compare/v1.0.4...v1.0.5) (2019-05-10)
@@ -66,3 +104,4 @@
 ### Documentation
 
 * **readme:** add Greenkeeper badge ([85db639](https://github.com/spmeesseman/extjs-pkg-websocket/commit/85db639))
+
