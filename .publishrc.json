@@ -45,6 +45,7 @@
         "bugs":          "https://github.com/spmeesseman/extjs-pkg-websocket/issues",
         "npmRegistry":   "https://registry.npmjs.org",
         "textEditor":    "",
+        "historyFile":   "",
         "npmScope":      "@spmeesseman",
         "githubRelease": "Y",
         "emailNotification": "N",
