@@ -84,7 +84,7 @@ Ext.define('Ext.ux.WebSocket',
             //me.memento.capture('autoReconnect', me);
         }
         catch(err) {
-            console.error(err.message);
+            console.log(err);
             return null;
         }
 
@@ -237,6 +237,7 @@ Ext.define('Ext.ux.WebSocket',
             me.fireEvent('message', me, msg);
         }
         catch(err) {
+            Ext.Error.raise(err);
             if (Ext.isString(message.data)) me.fireEvent(message.data, me, message.data);
             // Message event is always sent
             me.fireEvent('message', me, message.data);
