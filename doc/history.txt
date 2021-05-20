@@ -23,3 +23,32 @@ May 29th, 2019
 
 1.  Initial Release.
 
+
+Version 1.0.7
+May 20th, 2021
+-------------------------------------------------------------------------------
+********************************************************************************
+***                                                                            *
+*** Verify that the following requirements have been satisfied:                *
+***                                                                            *
+*** Requirements:                                                              *
+*** -------------                                                              *
+***                                                                            *
+***    1.  Operating System            : Windows 7+                            * 
+***                                                                            *
+***    2.  CPU                         : 1.0+ GHz                              *
+***                                                                            *
+***    3.  RAM                         : 128 MB                                *
+***                                                                            *
+***    4.  ExtJS Core                  : 6.7+                                  *
+***                                                                            *
+********************************************************************************
+
+1.  Refactoring
+    
+    Log any errors to the console in the following receiver callback:
+
+        receiveBothMessage(message)
+
+    All other methods already contain proper error logging.
+

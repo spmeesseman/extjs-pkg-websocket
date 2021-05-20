@@ -1,6 +1,6 @@
 {
     "name": "@perryjohnson/extjs-pkg-websocket",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "displayName": "ExtJS Package Wrapper for WebSocket",
     "description": "ExtJS Package Wrapper for WebSocket",
     "license": "MIT",
@@ -17,9 +17,7 @@
         "type": "svn",
         "url": "https://svn.development.pjats.com/repos/pja/extjs-pkg-websocket/trunk"
     },
-    "devDependencies": {
-        "@perryjohnson/app-publisher": "^1.4.5"
-    },
+    "devDependencies": {},
     "scripts": {
         "app-publish": "app-publisher -p ps",
         "app-publish-dry": "app-publisher -p ps --dry-run"
@@ -43,7 +41,7 @@
         "creator": "spmeesseman",
         "summary": "Package wrapper for WebSocket",
         "detailedDescription": "Package wrapper for WebSocket",
-        "version": "1.0.6.0",
+        "version": "1.0.7.0",
         "compatVersion": "1.0.0",
         "format": "1",
         "slicer": null,
