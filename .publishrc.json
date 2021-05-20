@@ -10,9 +10,9 @@
     "distDocPath":       "",
     "dryRunVcRevert":    "Y",
     "emailNotification": "Y",
-    "emailServer":       "10.0.7.50",
+    "emailServer":       "10.0.7.152",
     "emailRecip":        "productrelease@pjats.com",
-    "emailSender":       "productbuild@pjats.com",
+    "emailSender":       "service_pja@pjats.com",
     "emailHrefs": [
         "https://app1.development.pjats.com/svn/web/filedetails.php?repname=pja&path=%2Fextjs-pkg-websocket%2Ftrunk%2FREADME.md&usemime=1|ReadMe File|Readme File - WebSVN",
         "https://app1.development.pjats.com/projects/set_project.php?project=extjs-pkg-websocket&make_default=no&ref=roadmap_page.php|Project Roadmap|Roadmap - Projects Board",
